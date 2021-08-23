@@ -1,15 +1,16 @@
 import React from "react";
 import "./App.css";
-import CryptoCoin from "./components/card/CryptoCoin";
+
 import Navbar from "./components/navbar/Navbar";
 import "./components/font-awesome/index";
+import Crypto from "./components/card/Crypto";
 
 function App() {
   return (
     <>
       <div className="App">
         <Navbar />
-        <CryptoCoin />
+        <Crypto />
       </div>
     </>
   );
