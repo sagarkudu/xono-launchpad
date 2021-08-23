@@ -1,17 +1,23 @@
-import React from 'react';
+import React from "react";
+import "./navbar.styles.css";
+
+import logo from "../../assets/images/logo.png";
+import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
   return (
     <>
-      <nav className="navbar navbar-light bg-light">
-  <div className="container-fluid">
-    <a className="navbar-brand">Navbar</a>
-    <form className="d-flex">
-      <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
-      <button className="btn btn-outline-success" type="submit">Search</button>
-    </form>
-  </div>
-</nav>
+      <nav className="navbar navbar-light  navbar-bg">
+        <div className="container-fluid">
+          <NavLink exact className="navbar-brand" to="/">
+            <img src={logo} alt="logo" className="logo-size"></img>
+          </NavLink>
+
+          <button className="btn btn-outline-success" type="submit">
+            Connect Wallet
+          </button>
+        </div>
+      </nav>
     </>
   );
 };

@@ -1,0 +1,11 @@
+.progress {
+  height: 10px;
+  border-radius: 10px;
+}
+
+.progress,
+.progress-bar {
+  display: -webkit-flex;
+  display: flex;
+  overflow: hidden;
+}
