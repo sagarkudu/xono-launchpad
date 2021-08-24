@@ -5,15 +5,15 @@ import CryptoCard from "./CryptoCard";
 const Crypto = () => {
   return (
     <>
-      <div className="container-fluid ">
+      <div className="container-fluid nav_bg">
         <div className="row">
-          <div className="col-10 mx-auto text-center"></div>
+          <div className="col-10 mx-auto"></div>
         </div>
       </div>
 
-      <div className="container-fluid mb-5 ">
-        <div className="row ">
-          <div className="col-10 mx-auto my-auto ">
+      <div className="container-fluid mb-5">
+        <div className="row">
+          <div className="col-10 mx-auto my-auto">
             <div className="row gy-4">
               {CryptoDataAPI.map((val, index) => {
                 return (
@@ -31,6 +31,7 @@ const Crypto = () => {
                     token_address={val.token_address}
                     start={val.start}
                     end={val.end}
+                    sale_start_time={val.sale_start_time}
                     status={val.status}
                     btn1={val.btn1}
                     btn2={val.btn2}

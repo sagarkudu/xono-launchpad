@@ -59,7 +59,7 @@ const CryptoCard = (props) => {
             </div>
           </div>
 
-          <div className="card-body" >
+          <div className="card-body">
             <h3 className="card-title">{props.title}</h3>
             <p className="card-text">{props.description}</p>
             <div className="mt-3">
@@ -102,14 +102,15 @@ const CryptoCard = (props) => {
               </table>
               <h6>Token Address</h6>
               <h6>{props.token_address}</h6>
-              <h6>{props.start}</h6>
-              <h6>{props.end}</h6>
-              <h6> Sale Start :88 Hours 55 Min 44 Sec </h6>
-              <h5 className="mt-3">{props.status} </h5>
+              <h6>Start :{props.start}</h6>
+              <h6>End : {props.end}</h6>
+              <h6>Sale Start : {props.sale_start_time}</h6>
+
+              <h5 className="mt-3">Status: {props.status} </h5>
               <a href="/refund_fund">
                 <button className="btn btn-danger">{props.btn1}</button>
               </a>
-              <button className="btn btn-primary">{props.btn2}</button>
+              <button className="btn btn-primary">End :{props.btn2}</button>
             </div>
           </div>
         </div>
